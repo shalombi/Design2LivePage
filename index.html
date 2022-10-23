@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Design2LivePage</title>
+</head>
+
+<body>
+
+    <header class="main-header">
+
+        <div class="logo">Blogin <span class="green-list">.</span></div>
+        <button class="close-hamburger-btn" onclick="closeHamburgerMenu()">X</button>
+
+        <nav class="main-nav">
+            <ul class="list-nav  clean-list  flex">
+                <li class="green-list-journal-li  li-tag ">Journal</li>
+                <li class="li-tag">About</li>
+                <li class="li-tag">Contact</li>
+                <li class="li-tag">Work</li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="main-content">
+
+        <div class="card-layout">
+            <div class="card first-card">
+                <img src="img/Layer_2.png" class="card-image" alt="">
+
+                <div class="content-card">
+                    <h2 class="card-title">More than just a music festival</h2>
+                    <p class="card-paragraph">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <br>
+                        <br>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                    <button class="card-btn" onclick="renderModal()"> <a href="#">Continue Reading</a> </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/Layer_3.png" class="card-image" alt="">
+
+                <div class="content-card">
+                    <h2 class="card-title">More than just a music festival</h2>
+                    <p class="card-paragraph">
+                        Ut enim ad minim veniam,
+                        quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <br>
+                        <br>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                    <button class="card-btn" onclick="renderModal()"> <a href="#">Continue Reading</a> </button>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <img src="img/Layer_4.png" class="card-image" alt="">
+
+                <div class="content-card">
+                    <h2 class="card-title">More than just a music festival</h2>
+                    <p class="card-paragraph">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        <br>
+                        <br>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                    <button class="card-btn" onclick="renderModal()"> <a href="#">Continue Reading</a> </button>
+                </div>
+            </div>
+
+            <footer class="main-content-footer2">
+
+                <div class="footer-card-content">
+                    <span class="previous">
+                        <div class="previous-text2"> Previous </div> <img class="previous-symbol2" src="img/prev.png"
+                            alt="">
+                    </span>
+                    <span class="next">
+                        <div class="next-text2"> Next </div> <img class="next-symbol2" src="img/next.png" alt="">
+                    </span>
+                </div>
+            </footer>
+        </div>
+    </main>
+
+    <footer class="page-footer">
+        <div class="page-footer-container">
+            <div class="footer-logo">Blogin <span class="green-list">.</span></div>
+            <p class="footer-page-text">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+                Pixelhint.com
+            </p>
+
+            <section>
+
+                <ul class="tags-container clean-list flex">
+                    <li class="tag-contain">
+                        <div class="div-tag">
+                            <a href="#" class="facebook">
+                                <img class="img-footer-tag" src="img/svg/facebook.svg" alt="">
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="tag-contain">
+                        <div class="div-tag">
+                            <a href="#" class="twitter">
+                                <img class="img-footer-tag" src="img/svg/twitter.svg" alt="">
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="tag-contain">
+                        <div class="div-tag">
+                            <a href="#" class="behance">
+                                <img class="img-footer-tag" src="img/svg/behance.svg" alt="">
+                            </a>
+                        </div>
+                    </li>
+
+
+                    <li class="tag-contain">
+                        <div class="div-tag">
+                            <a href="#" class="web">
+                                <img class="img-footer-tag" src="img/svg/web.svg" alt="">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+
+    <script>
+        gIsrMenuIsOpen = false
+
+        const renderModal = () => {
+            console.log('reading more clicked');
+        }
+
+        const closeHamburgerMenu = () => {
+            const elBtnHamburger = document.querySelector('.close-hamburger-btn')
+            const elCloseHamburger = document.querySelector('.main-nav')
+            if (gIsrMenuIsOpen) {
+                elCloseHamburger.classList.add('hide')
+                elBtnHamburger.innerText = '☰'
+            } else {
+                elCloseHamburger.classList.remove('hide')
+                elBtnHamburger.innerText = 'X'
+            }
+            gIsrMenuIsOpen = !gIsrMenuIsOpen
+        }
+
+    </script>
+</body>
+
+</html>

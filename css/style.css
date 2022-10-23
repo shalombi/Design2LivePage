@@ -1,0 +1,443 @@
+:root {
+    /* pallet */
+    --clr3: #f0f0f0;
+    --clr2: #b4ad9e;
+    --clr1: #626262;
+}
+
+@font-face {
+    font-family: Eurofurenceregular;
+    src: url(/fonts/eurof55.ttf);
+}
+
+@font-face {
+    font-family: lato;
+    src: url(/fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: lato-bold;
+    src: url(/fonts/Lato-Bold.ttf);
+}
+
+/* BASICS  */
+body {
+    color: rgb(61, 61, 61);
+    font-family: Lato;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    max-width: 468px;
+    max-height: 307px;
+}
+
+h2 {
+    margin: 0;
+}
+
+/* HELPERS */
+
+.flex {
+    display: flex;
+}
+
+.flex.space-between {
+    justify-content: space-between;
+}
+
+.flex.align-center {
+    align-items: center;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/* HEADER */
+.logo {
+    font-family: Eurofurenceregular;
+    position: absolute;
+    font-size: 40px;
+    left: 264px;
+    top: 34px;
+}
+
+.main-header:not(.green-list) {
+    background-color: #292929;
+    color: #ffffff;
+    font-size: 16px;
+    height: 130px;
+}
+
+.main-nav {
+    position: relative;
+}
+
+.list-nav {
+    position: absolute;
+    top: 52px;
+    right: 0;
+    color: white;
+}
+
+.li-tag {
+
+    padding-inline-start: 38px;
+    padding-inline-end: 38px;
+    color: white;
+}
+
+.green-list {
+    color: #58c93a;
+}
+
+.li-tag:hover {
+    cursor: pointer;
+}
+
+/* MAIN */
+.modal-container {
+    position: absolute;
+    background: gray;
+    width: 100%;
+    height: 100%;
+    opacity: 0.55;
+}
+
+.modal {
+    height: 400px;
+    width: 480px;
+    background: #2fecec;
+    position: relative;
+    left: 98px;
+    top: 390px;
+}
+
+.modal-btn {
+    position: relative;
+    width: 160px;
+    height: 50px;
+    left: 150px;
+    top: 300px;
+    background: orange;
+    font-size: 40px;
+    box-shadow: -1px -2px 0;
+}
+
+.card-layout {
+    border: 1px solid #e1e0e0;
+}
+
+.main-content:not(.page-footer) {
+    border: 1px solid #e1e0e0;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #e1e0e0;
+    background-color: #ffffff;
+    display: flex;
+
+}
+
+/* LAYOUT */
+.first-card {
+    margin-top: 40px
+}
+
+.card-image {
+    max-width: 468px;
+    max-height: 307px;
+    margin-bottom: 5rem;
+}
+
+.card {
+    display: flex;
+    padding: 15px;
+    gap: 43px;
+}
+
+.clean-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* MAIN */
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+    max-height: 307px;
+}
+
+.card-title {
+    max-width: 386px;
+    min-height: 51px;
+}
+
+.card-paragraph {
+    max-width: 445px;
+    min-height: 114px;
+}
+
+.card-layout {
+    flex-direction: column;
+}
+
+.card-btn {
+    width: 186px;
+    min-height: 40px;
+    border-radius: 22px;
+    border: 2px solid #c2c2c2;
+    background-color: #ffffff;
+    color: #c2c1c1;
+    margin-top: 70px;
+}
+
+.card-btn {
+    cursor: pointer;
+}
+
+.card-btn a:hover {
+    color: #58c93a;
+    font-weight: bolder;
+}
+
+.card-btn a {
+    font-family: lato-bold;
+    text-decoration: none;
+    color: #c2c1c1;
+    padding: 10px;
+    font-size: 15px;
+
+}
+
+.main-content-footer {
+    position: relative;
+    border-top: 1px solid rgb(14, 0, 0);
+    min-height: 75px;
+    border-bottom: 1px solid rgb(14, 0, 0);
+}
+
+/* button page */
+.page-footer {
+    color: #a6a6a6;
+    background-color: #f8f8f8;
+    top: 1224px;
+    height: 300px;
+    display: flex;
+    position: relative;
+    top: 0;
+
+}
+
+/* previous next btns */
+
+.previous {
+    margin-left: 18px;
+    margin-bottom: 13px;
+}
+
+.previous-text2 {
+    margin-inline-start: 10px;
+}
+
+.next-text2 {
+    margin-inline-end: 10px;
+}
+
+.next {
+    margin-bottom: 13px;
+    margin-right: 18px;
+}
+
+.footer-card-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer-card-content .previous {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.footer-card-content .next {
+    display: flex;
+    align-items: center;
+}
+
+/* footer page */
+
+.footer-page-text {
+    position: absolute;
+    top: 36%;
+    left: 33%;
+}
+
+.tags-container {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 26%;
+    left: 41%;
+}
+
+.div-tag {
+    background: #e5e5e5;
+    min-width: 46px;
+    min-height: 42px
+}
+
+.img-footer-tag {
+    margin-top: 10px;
+    max-width: 48px;
+    max-height: 19px;
+    aspect-ratio: 1/1;
+}
+
+.footer-logo {
+    font-family: Eurofurenceregular;
+    position: absolute;
+    font-size: 40px;
+    left: 43.6%;
+    top: 20%;
+}
+
+.close-hamburger-btn {
+    display: none;
+    cursor: pointer;
+}
+
+.div-tag:hover {
+    background-color: #516fad;
+}
+
+.green-list-journal-li {
+    color: #58c93a;
+}
+
+
+@media screen and (max-width: 1044px) {
+    .logo {
+        left: 94px;
+    }
+
+    .footer-page-text {
+        left: 23%;
+    }
+
+    .tags-container {
+        left: 40%;
+    }
+     .green-list-journal-li {
+        color: #58c93a;
+    }
+}
+
+
+@media screen and (max-width: 740px) {
+    .hide {
+        display: none
+    }
+
+
+    .first-card {
+        margin-top: 0;
+    }
+
+    .main-content:not(.page-footer) {
+        left: 50%;
+
+    }
+
+    .card {
+        display: flex;
+        gap: 23px;
+        flex-direction: column;
+        margin-bottom: 5px;
+        align-items: start;
+    }
+
+    .card-btn {
+        margin-top: 4px;
+    }
+
+    .card-image {
+        display: flex;
+        gap: 23px;
+        flex-direction: column;
+        margin-bottom: 0;
+
+    }
+
+    .content-card {
+        display: flex;
+        flex-direction: column;
+        max-height: 307px;
+        margin-bottom: 40px;
+    }
+
+    .card-title {
+        max-width: unset;
+        min-height: unset;
+    }
+
+    .card-image {
+        max-width: 598px;
+        max-height: 377px;
+    }
+
+    .card-content {
+        margin-bottom: 0
+    }
+
+    .list-nav {
+        top: 129px;
+        display: unset;
+        display: flex;
+        width: 268px;
+        height: 100vh;
+        background: rgb(193, 190, 190);
+        font-size: 70.4px;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .li-tag {
+        background: #1a1919;
+        border-radius: 8px;
+        margin-top: 15px;
+        min-width: 241px;
+    }
+
+    .green-list-journal-li {
+        color: white;
+    }
+
+    .list-nav:not(.li-tag) {
+        opacity: 0.9;
+    }
+
+    .close-hamburger-btn {
+        display: block;
+        position: absolute;
+        right: 40px;
+        font-size: 30px;
+        top: 40px;
+        width: 50px;
+        height: 50px;
+        background: #ffb105;
+        border-radius: 6px;
+    }
+
+    .page-footer-container {
+        position: relative;
+        width: 100%;
+        right: 20%;
+    }
+}
