@@ -149,23 +149,23 @@
     </footer>
 
     <script>
-        gIsrMenuIsOpen = false
+        gIsMenuIsOpen = false
 
         const renderModal = () => {
             console.log('reading more clicked');
         }
 
         const closeHamburgerMenu = () => {
+            gIsMenuIsOpen = !gIsMenuIsOpen
             const elBtnHamburger = document.querySelector('.close-hamburger-btn')
             const elCloseHamburger = document.querySelector('.main-nav')
-            if (gIsrMenuIsOpen) {
+            if (gIsMenuIsOpen) {
                 elCloseHamburger.classList.add('hide')
                 elBtnHamburger.innerText = '☰'
             } else {
                 elCloseHamburger.classList.remove('hide')
                 elBtnHamburger.innerText = 'X'
             }
-            gIsrMenuIsOpen = !gIsrMenuIsOpen
         }
 
     </script>
